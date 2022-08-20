@@ -1,0 +1,15 @@
+.img-personaje {
+    max-width: 100px;
+}
+.nombre-personaje {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.contenedor-img-personaje {
+    width: 100px;
+    
+}
+.contenedor-img-personaje img{
+    width: 100%;
+
+}

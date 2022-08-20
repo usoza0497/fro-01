@@ -1,0 +1,27 @@
+h1 {
+    color: #06283D;
+    text-transform: uppercase;
+}
+h2 {
+    margin: 0;
+    color: #1363DF;
+    text-transform: uppercase;
+}
+h3 {
+    color: #47B5FF;
+    margin-top: 10px;
+}
+ul {
+    margin: 0;
+}
+.lst-lvl1 {
+    font-size: 15px;
+    color: #47B5FF;
+    font-weight: 700;
+    
+}
+.lst-lvl2 {
+    color: #393E46;
+    font-weight: 400;
+    list-style: none;
+}

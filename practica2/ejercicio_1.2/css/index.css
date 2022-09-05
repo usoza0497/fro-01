@@ -1,27 +1,26 @@
 /*CONTAINERS FLEX*/
 .cntdr-row {
     display: flex;
-    padding: 10px 50px;
+    padding: 25px 110px 20px;
     justify-content: space-between;
 }
 
 .cntdr-column {
     display: flex;
     flex-direction: column;
-    padding: 10px 50px;
+    padding: 25px 110px;
     justify-content: space-between;
-    margin-bottom: 70px;
 }
 .cntdr-row-2 {
     display: flex;
-    padding: 10px 30px;
+    padding: 10px 50px;
     justify-content: space-between;
 }
 
 .cntdr-column-2 {
     display: flex;
     flex-direction: column;
-    padding: 10px 30px;
+    padding: 10px 50px;
     justify-content: space-between;
 }
 .cntdr-row-3 {
@@ -36,16 +35,16 @@
     justify-content: space-between;
 }
 
-/*CONTAINERS FLEX - CHILDREN*/
 
 /* --------------- HEADER --------------- */
 #hdr {
     background: #191919;
     color: white;
-    height: 310px;
+    height: 730px;
+    margin-bottom: 165px;
 }
 #hdr p {
-    font-size: 10px;
+    font-size: 25px;
 }
 #hdr p span {
     color: #787878;
@@ -56,9 +55,10 @@
 
 #hdr .cntdr-column-3 h1,
 #hdr .cntdr-column-3 h2 {
-    font-size: 23px;
+    font-size: 50px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
 }
 #hdr .cntdr-column-3 h2 {
     font-family: 'Playfair Display';
@@ -81,7 +81,7 @@
 #sct-design-1 .nav,
 #sct-design-2 .nav,
 #sct-design-1 p {
-    font-size: 12px;
+    font-size: 30px;
     font-weight: 700;
 }
 
@@ -101,23 +101,26 @@
 }
 
 #sct-design-1 .nav {
-    flex-grow: 0.5;
-    margin-bottom: 100px;
+    flex-grow: 0.3;
+    margin-bottom: 260px;
 }
 
 #sct-design-1 span {
-    font-size: 25px;
+    font-size: 50px;
     font-weight: 700;
 }
+
 #sct-design-1 .design-body p {
-    font-size: 50px;
-    margin-bottom: 12px;
+    font-size: 115px;
+    margin-bottom: 40px;
+    line-height: 1;
 }
 
 
 /* --------------- DESIGN 2 --------------- */
 #sct-design-2 {
     color: #191919;
+    margin-bottom: 110px;
 }
 
 #sct-design-2 .nav {
@@ -126,24 +129,24 @@
 }
 
 #sct-design-2 .nav li {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 #sct-design-2 .content-1 {
-    font-size: 55px;
+    font-size: 120px;
     font-weight: 700;
     align-self: flex-start;
     color: rgb(252 68 3);
-    margin-bottom: 25px;
+    margin-bottom: 60px;
 }
 
 #sct-design-2 .content-2 {
     align-self: flex-end;
-    font-size: 35px;
+    font-size: 90px;
     font-weight: 700;
     line-height: 1.2;
 }
 
 #sct-design-2 .content-2 span {
-    border-bottom: 4px solid rgb(252 68 3);
+    border-bottom: 8px solid rgb(252 68 3);
 }

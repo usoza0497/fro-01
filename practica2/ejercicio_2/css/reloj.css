@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background: linear-gradient(90deg, rgba(8,0,150,1) 0%, rgba(0,157,189,1) 45%, rgba(0,237,147,1) 100%);
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+}
+
+.reloj {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    align-self: center;
+}
+.content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 3px 2px 4px rgb(70, 70, 70);
+
+}
+.number {
+    font-size: 70px;
+}
+.texto {
+    font-size: 35px;
+    text-transform: uppercase;
+}

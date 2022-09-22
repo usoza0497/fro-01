@@ -1,0 +1,84 @@
+/** MEDIA QUERIES ||| +576PX*/
+@media screen AND (min-width: 576px) {
+    
+}
+
+/** MEDIA QUERIES ||| +768PX*/
+@media screen AND (min-width: 768px) {
+    .header {
+        padding: 2rem;
+    }
+    .header__title {
+        font-size: 4.5rem;
+        margin: 2rem;
+        width: 50vw;
+        text-align: left;
+    }
+    
+    .header__nav {
+        font-size: 1.5rem;
+        width: 50vw;
+    }
+
+    .header__content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .proyectos__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .proyectos__categoria {
+        margin: 5rem;
+    }
+
+}
+
+/** MEDIA QUERIES ||| +992PX*/
+@media screen AND (min-width: 992px) {
+    .header {
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url("../img/hero_optimized.png");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .header__button-container {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #proyectos h2 {
+        font-size: 2vw;
+    }
+
+    footer p {
+        font-size: 1vw;
+    }
+    
+    footer p:last-of-type {
+        display: block;
+    }
+}
+
+@media screen AND (min-width: 992px) AND (orientation: landscape) {
+    .header {
+        height: 100vh;
+    }
+}
+
+@media screen AND (min-width: 992px) AND (orientation: portrait) {
+    .header {
+        height: 50vh;
+    }
+}

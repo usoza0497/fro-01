@@ -4,56 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Dev | Andres Soza</title>
+    <script src="https://kit.fontawesome.com/0e797b15b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
 </head>
 <body>
-    <header>
-
+    <header class="header">
+        <div class="header__content">
+            <h1 class="header__title">FRO-01_</h1>
+            <nav>
+                <ul class="header__nav">
+                    <li class="header__link"><a href="#">Inicio</a></li>
+                    <li class="header__link"><a href="#">Proyectos</a></li>
+                    <li class="header__link"><a href="#">Acerca de Mi</a></li>
+                    <li class="header__link"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__button-container">
+            <a href="#proyectos" class="header__button">
+                <span>Comenzar</span>
+                <svg>
+                    <rect x="0" y="0" fill="none"></rect>
+                </svg>
+            </a>
+        </div>
     </header>
 
     <main>
-        <h1>FRO-01: Andres Soza</h1>
-        <section>
-            <h2>Practica 1</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="practica1/ejercicio_1_2_3/ejercicio1.html">Ejercicio 1, 2 y 3</a>
-                    </li>
-                    <li>
-                        <a href="practica1/ejercicio_4/saturno.html">Ejercicio 4</a>
-                    </li>
-                </ul>
-            </nav>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyectos__container">
+                <div class="proyectos__categoria">
+                    <h3>Practica 1</h3>
+                    <img src="img/perro-laptop.png" alt="">
+                    <nav>
+                        <ul>
+                            <li class="proyectos__link">
+                                <a href="proyectos/practica1/ejercicio_1_2_3/ejercicio1.html">Ejercicio 1, 2 y 3</a>
+                            </li>
+                            <li class="proyectos__link">
+                                <a href="proyectos/practica1/ejercicio_4/saturno.html">Ejercicio 4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="proyectos__categoria">
+                    <h3>Practica 2</h3>
+                    <img src="img/gato-durmiendo.png" alt="">
+                    <nav>
+                        <ul>
+                            <li class="proyectos__link">
+                                <a href="proyectos/practica2/ejercicio_1.1/vistas/index.html">Ejercicio 1 Version 1</a>
+                            </li>
+                            <li class="proyectos__link">
+                                <a href="proyectos/practica2/ejercicio_1.2/vistas/index.html">Ejercicio 1 Version 2</a>
+                            </li>
+                            <li class="proyectos__link">
+                                <a href="proyectos/practica2/ejercicio_2/reloj.html">Ejercicio 2</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="proyectos__categoria">
+                    <h3>Practica 3</h3>
+                    <img src="img/futurama.png" alt="">
+                    <nav>
+                        <ul>
+                            <li class="proyectos__link">
+                                <a href="proyectos/practica3/responsive/index.html">Ejercicio Responsive</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="proyectos__categoria">
+                    <h3>Ejercicios En Clase</h3>
+                    <img src="img/jackie-chan.png" alt="">
+                    <ul>
+                        <li class="proyectos__link">
+                            <a href="proyectos/clase/flex/flex.html">Flex Practica</a>
+                        </li>
+                        <li class="proyectos__link">
+                            <a href="proyectos/clase/formularios/formularios.html">Formulario 1</a>
+                        </li>
+                        <li class="proyectos__link">
+                            <a href="proyectos/clase/tienda/index.html">Tienda (Flex)</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="proyectos__categoria">
+                    <h3>Proyecto Final</h3>
+                    <img src="img/gato-gritando.png" alt="">
+                    <ul>
+                        <li class="proyectos__link">
+                            <a href="#">Version HTML y CSS (Pendiente)</a>
+                        </li>
+                        <li class="proyectos__link">
+                            <a href="#">Version Bootstrap (Pendiente)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Practica 2</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="practica2/ejercicio_1.1/vistas/index.html">Ejercicio 1 Version 1</a>
-                    </li>
-                    <li>
-                        <a href="practica2/ejercicio_1.2/vistas/index.html">Ejercicio 1 Version 2</a>
-                    </li>
-                    <li>
-                        <a href="practica2/ejercicio_2/reloj.html">Ejercicio 2</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <h2>Ejercicios En Clase</h2>
-            <ul>
-                <li>
-                    <a href="clase/formularios/formularios.html">Formulario 1</a>
-                </li>
-            </ul>
-        </section>
+        
     </main>
 
     <footer>
-
+        <p>Andres Soza | Copyright &copy; 2022</p>
+        <p>Todos Los Derechos Reservados</p>
     </footer>
 
 </body>

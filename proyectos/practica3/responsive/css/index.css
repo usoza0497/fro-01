@@ -188,7 +188,7 @@ header {
     width: 100%;
 }
 #sct-img .icono {
-    max-width: 98rem;
+    width: 100%;
     background-color: var(--color-purple);
     position: relative;
 }

@@ -1,0 +1,236 @@
+/** GLOBALES */
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+
+    /*Primer Paleta de Colores*/
+    --color1-oragen: #F15412;
+    --color1-black: #000000;
+    --color1-lightblue: #34B3F1;
+    --color1-gray: #EEEEEE;
+
+    /*Segunda Paleta de Colores*/
+    --color2-darkblue: #053742;
+    --color2-lightblue: #39A2DB;
+    --color2-lightblue2: #A2DBFA;
+    --color2-gray: #E8F0F2;
+
+    /*Tercera Paleta de Colores*/
+    --color3-black: #000000;
+    --color3-blue: #150050;
+    --color3-purple: #3F0071;
+    --color3-lightpurple: #610094;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color3-black);
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/** RESOLUCION MINIMA */
+
+.header {
+    align-items: center;
+    background: var(--color3-blue);
+    padding: 0.5rem;
+    max-width: 100%;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__title {
+    color: #fff;
+    font-size: 4.340vw;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    height: 100%;
+    font-size: 2.431vw;
+    position: sticky;
+}
+
+.header__button-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: #fff;
+    width: 35rem;
+    height: 10rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    font-size: 3rem;
+}
+
+.header__button svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+}
+
+.header__button rect {
+    width: 100%;
+    height: 100%;
+    stroke: #fff;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition: 0.7s ease all;
+}
+
+.header__button:hover rect { 
+    stroke-dashoffset: 0;
+}
+
+.header__link {
+    list-style: none;
+    margin: 0;
+    align-items: center;
+}
+.header__link a {
+    color: #fff;
+    font-weight: 600;
+    transition: .3s ease;
+}
+.header__link a:hover {
+    color: var(--color1-oragen);
+}
+.header__hero {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#proyectos {
+    background: var(--color2-gray);
+    padding: 1rem;
+
+}
+
+#proyectos h2 {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.proyectos__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyectos__categoria {
+    width: 30rem;
+    height: 45rem;
+    border-radius: 2.5px;
+    margin-bottom: 2rem;
+    box-shadow: 4px 6px 15px -5px rgba(0,0,0,0.56);
+    border-radius: 5px;
+}
+
+.proyectos__categoria h3 {
+    background: var(--color3-purple);
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.proyectos__categoria img {
+    display: block;
+    filter: grayscale(1);
+}
+
+.proyectos__categoria ul {
+    padding: 1rem;
+}
+
+.proyectos__link {
+    margin-bottom: .5rem;
+}
+
+.proyectos__link a {
+    margin-bottom: .5rem;
+    color: var(--color3-black);
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+.proyectos__link a:hover {
+    margin-bottom: .5rem;
+    color: var(--color3-lightpurple);
+    font-weight: 500;
+}
+
+footer {
+    background-color: var(--color3-blue);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer::after {
+    content: '';
+    display: block;
+    height: 5rem;
+}
+
+footer p {
+    color: white;
+    font-size: 2.8vw;
+}
+
+footer p:last-of-type {
+    display: none;
+    margin-left: .2rem;
+}
+

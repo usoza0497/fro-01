@@ -1,0 +1,247 @@
+/*ESTILOS GLOBALES*/
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-gray: #373c3f;
+    --color-darkgray: #27212c;
+    --color-font-gray: #515151;
+    --color-ligthbluegray: #85cdd8;
+    --color-pink:#bc3183;
+    --gradient-lightblue: linear-gradient(90deg, rgb(37, 189, 209) 0%, rgba(9,144,169,1) 100%);
+    --color-white: #ebebeb;
+    --color-purple: #5b0fa1;
+    --color-lightblue: #088ca5;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+/* HEADER */
+
+header {
+    background: var(--color-gray);
+    color: var(--color-white);
+    width: 100%;
+}
+
+
+
+
+
+
+/** ESTILOS NAVEGACION EN MOVILES */
+
+#nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    min-height: 3.2rem;
+    padding-left: 4%;  
+}
+
+#nav-mobile .material-icons {
+    background: #202529;
+    min-height: 3.2rem;
+    min-width: 3.2rem;
+}
+
+#nav-mobile span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+/** ESTILOS NAVEGACION EN DESKTOP (CONSULTAR: "css/resoluciones.css")*/
+
+#nav-desktop {
+    display: none;
+}
+
+
+
+
+
+
+/** ESTILOS HERO */
+
+#sct-hero {
+    position: relative;
+    width: 100%;
+    background: var(--gradient-lightblue);
+}
+
+#sct-hero::after {
+    content: '';
+    display: block;
+    padding-top: 60%;
+}
+
+#sct-hero .content {
+    position: absolute;
+    top: 50%;
+    left:20%;
+    transform: translate(-20%, -50%);
+    color: var(--color-white);
+    width: 80%;
+}
+
+#sct-hero .content h2 {
+    font-size: 6.5vw;
+    line-height: 6.5vw;
+    margin-bottom: 3.5rem;
+}
+
+#sct-hero .content-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+}
+
+#sct-hero .content-2 p {
+    font-size: 3.5vw;
+    line-height: 6.5vw;
+    color: var(--color-ligthbluegray);
+    font-weight: 600;
+}
+
+#sct-hero .content-2 span {
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 6.5vw;
+}
+
+
+
+
+
+
+/** ESTILOS ROBINHOOD LINK */
+
+#sct-robinhood {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: var(--color-darkgray);
+}
+
+#sct-robinhood::after {
+    content: '';
+    display: block;
+    padding-top: 20%;
+}
+
+#sct-robinhood p {
+    width: 100%;
+    text-align: center;
+    color: #9282a0;
+    font-size: 3vw;
+}
+
+#sct-robinhood .button {
+    position: relative;
+    width: 30vw;
+    background-color: var(--color-pink);
+}
+
+#sct-robinhood .button:hover {
+    background-color: #c75899;
+}
+
+#sct-robinhood .button::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+#sct-robinhood .button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    color: #fff;
+}
+
+
+
+
+
+
+/** ESTILOS SECCION DE IMAGENES Y ICONO */
+
+#sct-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#sct-img .icono {
+    max-width: 98rem;
+    background-color: var(--color-purple);
+    position: relative;
+}
+
+#sct-img .icono::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+#sct-img .icono span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    font-weight: 700;
+    color: white;
+}
+
+
+#sct-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+/** ESTILOS SECCION DE BODY - BLAZROBAR.COM */
+
+#sct-blazrobar {
+    background: var(--color-white);
+    padding: 3rem;
+}
+
+#sct-blazrobar h2 {
+    font-size: 5.938vw;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    color: var(--color-lightblue);
+}
+
+#sct-blazrobar .content p {
+    font-size: 4.375vw;
+    font-weight: 400;
+    line-height: 6.875vw;
+    color: var(--color-font-gray);
+    margin-bottom: 2.5rem;
+}
+#sct-blazrobar .content p:last-child {
+    margin-bottom: 0;
+}

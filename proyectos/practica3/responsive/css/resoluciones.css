@@ -1,0 +1,99 @@
+/** DISPOSITIVOS CON RESOLUCIONES MAYORES 640px */
+
+@media all and (min-width: 640px) {
+    #nav-mobile {
+        min-height: 7.5rem;
+    }
+
+    #nav-mobile .material-icons {
+        min-height: 7.5rem;
+        min-width: 7.5rem;
+    }
+
+    
+}
+
+
+
+
+
+
+
+/** DISPOSITIVOS CON RESOLUCIONES MAYORES 980px */
+    
+@media all and (min-width: 980px) {
+    #nav-mobile {
+        display: none;
+    }
+    #nav-desktop {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        min-height: 10rem;
+        padding-left: 4%;
+        width: 60%;
+    }
+    #nav-desktop a {
+        color: #ebebeb;
+        text-decoration: none;
+    }
+    #sct-img {
+        flex-direction: row;
+        width: 100%;
+    }
+    #sct-img img {
+        width: calc(100% / 3);
+    }
+    #sct-img .icono {
+        width: calc(100% / 3);
+
+    }
+
+    #sct-blazrobar {
+        padding-top: 6rem;
+        width: 100%;
+    }
+
+    #sct-blazrobar h2 {
+        font-size: 3rem;
+
+    }
+
+    #sct-blazrobar .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #sct-blazrobar .content,
+    #sct-blazrobar h2 {
+        width: 80%;
+        margin: 0 auto 2.5rem;
+    }
+
+    #sct-blazrobar .content div {
+        width: 48%;
+    }
+
+    #sct-blazrobar .content p {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+}
+
+
+
+
+
+
+
+/** DISPOSITIVOS CON RESOLUCIONES MAYORES 1920px */
+
+@media all and (min-width: 1920px) {
+    
+    #sct-blazrobar .content,
+    #sct-blazrobar h2 {
+        width: 70%;
+        margin: 0 auto 2.5rem;
+    }
+
+}

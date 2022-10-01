@@ -1,0 +1,22 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+#sct-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #0a99b0;
+  height: 70vh;
+}
+#sct-banner h1, #sct-banner h2 {
+  font-size: 32px;
+  color: #ebebeb;
+}
+#sct-banner a {
+  color: #ebebeb;
+  text-decoration: none;
+}
+#sct-banner .fa-solid {
+  color: #ebebeb;
+}/*# sourceMappingURL=base.css.map */

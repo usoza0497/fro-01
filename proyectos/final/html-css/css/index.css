@@ -1,0 +1,82 @@
+:root {
+    --color-lightblue: #1d75de;
+    --color-black: #000000;
+    --color-gray: #efefef;
+    --color-white: #ffffff;
+}
+
+@font-face {
+    src: url(fonts/circular/CircularStd-Black.otf);
+    font-family: circular;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;  /* Box Model Hack */
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    font-size: 16px; /* 1rem = 10px */
+    font-family: circular;
+    background-image: linear-gradient(to top, var(--gris-claro) 0%, var(--blanco) 100%);
+}
+
+#header .header-navdesktop {
+    display: none;
+    width: 100%;
+    height:  8rem;
+    background-color: #000;
+}
+
+#header .header-navmobile {
+    width: 100%;
+    height:  5.4rem;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+#header .logo svg {
+    height: 2.8rem;
+    fill: #fff;
+}
+
+#header .header-navbutton i {
+    color: white;
+    font-size: 3rem;
+}
+
+#banner-premium {
+    height: auto;
+    background: var(--color-lightblue);
+    padding: 2.4rem 1.5rem;
+}
+
+#banner-premium h2 {
+    height: 9.2rem;
+    font-size: calc(24px + 4 * ((100vw - 320px) / 160));
+    font-weight: 900;
+
+    line-height: 1.2;
+}
+
+#banner-premium p {
+    height: 9.2em;
+    font-size: 18px;
+}
+
+@media screen AND (min-width="768px") {
+
+}
+
+@media screen AND (min-width="992px") {
+    
+}

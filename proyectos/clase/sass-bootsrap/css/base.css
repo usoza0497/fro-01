@@ -19,4 +19,8 @@ html {
 }
 #sct-banner .fa-solid {
   color: #ebebeb;
+}
+
+.test-color a {
+  display: flex;
 }/*# sourceMappingURL=base.css.map */

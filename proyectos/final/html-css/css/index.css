@@ -244,7 +244,7 @@ body {
     margin-bottom: 1.6rem;
     box-shadow: rgb(0 0 0 / 30%) 0px 0px 8px;;
     border-radius: 1rem;
-    width: 44rem;
+    max-width: 44rem;
 }
 
 .plans__freemonth {
@@ -302,7 +302,7 @@ body {
 
 .plans__disclaimer {
     font-size: 1.2rem;
-    width: 300;
+    font-weight: 300;
     line-height: 1.6rem;
     margin-top: 1.6rem;
 }
@@ -580,7 +580,7 @@ body {
     }
 
     .footer {
-        padding: 8rem ;
+        padding: 8rem 1.5rem 5rem;
     }
 
     .footer__content {
@@ -687,7 +687,7 @@ body {
     }
 
     .plans__card {
-        width: 36.4rem;
+        max-width: 36.4rem;
         padding: 1.6rem;
         margin-right: 1.6rem;
     }

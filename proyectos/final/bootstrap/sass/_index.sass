@@ -1,0 +1,544 @@
+html
+    font-size: 10px
+    scroll-behavior: smooth
+
+body
+    font-family: circular
+
+p
+    margin-bottom: 0
+
+a:hover
+    color: $color-green
+
+.nav
+    background: $color-black
+
+#nav--desktop
+    display: none
+
+#nav--mobile
+    width: 100%
+    height: 5.4rem
+    padding: 0 1.5rem
+    svg
+        height: 2.8rem
+        fill: $color-white
+
+.navbar-toggler 
+    color: $color-white
+    i
+        font-size: 2.2rem
+.offcanvas.offcanvas-end
+    background: $color-black
+    padding: 3.8rem
+    width: 100%
+    max-width: 44.7rem
+    display: flex
+    flex-direction: row
+    z-index: 2
+    .offcanvas-body
+        padding: 0
+        z-index: 70000
+        overflow: hidden
+
+.offcanvas-backdrop 
+    z-index: 0
+    width: 0
+
+//MENU BUTTON FOR MOBILE
+.menu-btn
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 5rem
+    height: 5rem
+    cursor: pointer
+    transition: all .15s ease-in-out
+    z-index: 1000
+
+.menu-btn__burger
+    width: 2.2rem
+    height: .3rem
+    background: $color-white
+    border-radius: .5rem
+    box-shadow: 0 .2rem .5rem rgba(255, 101, 47, .2)
+    transition: all .15s ease-in-out
+    
+
+.menu-btn__burger::after,
+.menu-btn__burger::before
+    content: ''
+    position: absolute
+    width: 2.2rem
+    height: .3rem
+    background: $color-white
+    border-radius: .5rem
+    box-shadow: 0 .2rem .5rem rgba(255, 101, 47, .2)
+    transition: all .2s ease-in-out
+
+.menu-btn__burger::before
+    transform: translateY(-0.7rem)
+
+.menu-btn__burger::after
+    transform: translateY(0.7rem)
+
+    //MENU BUTTON FOR MOBILE - ANIMATION
+
+.menu-btn.open 
+    .menu-btn__burger
+        background: transparent
+        box-shadow: none
+
+.menu-btn.open 
+    .menu-btn__burger::before
+        transform: rotate(-45deg)
+.menu-btn.open 
+    .menu-btn__burger::after
+        transform: rotate(45deg)
+
+.nav__link-container--mobile
+    padding-bottom: 2.5rem
+    .nav__separator--mobile
+        margin: 1.8rem 0 3rem
+
+.nav__mainlinks--mobile,
+.nav__links--mobile
+    color: $color-white
+    text-decoration: none
+    line-height: 1
+       
+.nav__mainlinks--mobile
+    font-size: 3rem
+    font-weight: 700
+.nav__links--mobile
+    font-size: 2.4rem
+
+.nav__mainlinks--mobile:hover,
+.nav__links--mobile:hover
+    color: $color-green
+
+.nav__separator--mobile
+    background: $color-white
+    width: 2rem
+    height: .2rem
+
+.banner
+    background: $color-lightblue
+    max-width: 100vw
+    margin: 0 auto
+
+.banner__container
+    padding: 2.4rem 1.5rem
+
+.banner__header
+    line-height: 1.2
+    font-size: calc(24px + 4 * ((100vw - 320px) / 160))
+    font-weight: 900
+    color: $color-white
+    margin-bottom: 1.5rem
+
+.banner__description
+    font-size: 1.8rem
+    line-height: 1.5
+    color: $color-white
+
+.btn__container
+    height: 11.4rem
+    margin: 2rem 0 4rem
+    flex-direction: column
+    justify-content: space-between
+
+.btn
+    background-color: $color-black
+    height: 5.2rem
+    border-radius: 50rem
+    font-size: 1.4rem
+    text-transform: uppercase
+    font-weight: 700
+    transition: all 0.1s
+    color: $color-white
+    
+.btn:last-child
+    background: none
+    background-color: none
+    border: 2px solid $color-white
+    outline: none
+
+.btn:hover
+    transform: scale(1.05)
+
+.btn:active
+    outline: 2px solid $color-black
+    outline-offset: 1rem
+    
+
+
+
+
+.banner__disclaimer
+    color: $color-white
+    font-weight: 300
+    font-size: 1.1rem
+    line-height: 1.5
+
+.banner__link
+    color: $color-white
+
+.benefits
+    padding: 3.5rem 1.5rem
+    max-width: 100vw
+    margin: 0 auto
+
+.benefits__container
+    display: flex
+    flex-direction: column
+
+
+.benefits__header
+    font-size: 2.8rem
+    font-weight: 900
+    margin-bottom: 3rem
+
+.benefits__card
+    height: 14.2rem
+    margin-bottom: 2rem
+    display: flex
+    align-items: center
+
+.benefits__icon
+    min-width: 9.8rem
+    width: 9.8rem
+    height: 9.8rem
+    margin-right: 2rem
+    img
+        max-width: 100%
+
+.benefits__content
+    .benefits__name
+        font-size: 2.1rem
+        font-weight: 700
+    .benefits__description
+        font-size: 1.6rem
+
+.plans
+    background-color: $color-gray
+    padding: 3.5rem 1.5rem
+
+.plans__header
+    font-size: 3.2rem
+    font-weight: 900
+    margin: 0
+
+.plans__description
+    font-size: 1.6rem
+    margin: 1rem 0 6.6rem
+
+.card
+    padding: 2rem
+    border-radius: 1rem
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 8px
+    width: 100%
+    max-width: 44rem
+    margin: 0 auto 1.6rem
+
+.card__month-free
+    background-color: $color-lightblue
+    padding: .4rem .8rem
+    width: fit-content
+    color: $color-white
+    font-size: 1.4rem
+    font-weight: 900
+    border-radius: 0.4rem
+    margin-bottom: 1rem
+
+.card__header
+    font-size: 2.4rem
+    font-weight: 700
+
+.card__precio
+    font-size: 1.6rem
+    margin-bottom: .2rem
+
+.card__cuentas
+    font-size: 1.6rem
+    margin-bottom: 2rem
+
+
+.separator
+    border-top: .2rem inset $color-gray
+    margin: 0
+
+.card__list-benefits
+    margin: 3.2rem 0 1.6rem
+
+.card__benefit
+    margin-bottom: 0.5rem
+    p
+        line-height: 2.2rem
+        font-size: 1.6rem
+
+.card__benefit svg
+    height: 2.4rem
+    min-width: 2.4rem
+    margin-right: 1rem
+
+.card__disclaimer
+    font-size: 1.2rem
+    font-weight: 300
+    line-height: 1.6rem
+    margin-top: 1.6rem
+    a
+        color: #535353
+.card__disclaimer:last-child
+    margin-top: 0
+
+.footer
+    background: $color-black
+.footer__content
+    padding: 5rem 1.5rem 2rem
+
+.footer__logo svg 
+    fill: $color-white
+    width: 8.9rem
+
+.footer__link-container
+    width: 22rem
+    display: flex
+    flex-direction: column
+
+.footer__link-category
+    color: $color-gray2
+    font-size: 1.2rem
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: .1rem
+    line-height: 1.4
+    margin: 5rem 0 2.2rem
+    
+
+.footer__link
+    text-decoration: none
+    color: $color-white
+    font-size: 1.6rem
+    font-weight: 300
+    line-height: 1.5
+    padding: 0.3rem 0 1.5rem
+
+.footer__social
+    margin-top: 12rem
+    margin-bottom: 1.5rem
+    display: flex
+    flex-direction: row
+
+.footer__icon
+    margin-right: 1.5rem
+    height: 4.4rem
+    width: 4.4rem
+    background-color: $color-darkergray
+    border-radius: 50%
+
+.footer__icon 
+    i
+        display: block
+        font-size: 2.2rem
+        color: $color-white
+
+.footer__country 
+    a
+        color: $color-gray2
+        font-size: 1rem
+        font-weight: 300
+        letter-spacing: .1rem
+        align-self: baseline
+    i
+        margin-right: 0.8rem
+        font-size: 1.2rem
+        color: $color-gray2
+
+.footer__legal
+    margin-top: 1rem
+
+.footer__link--legal
+    margin-right: 2.4rem
+    min-width: 13rem
+
+.link__legal
+    color: $color-gray2
+    text-decoration: none
+    font-size: 1rem
+    margin: 1rem 2.4rem 1rem 0
+    min-width: fit-content
+.footer__copyright
+    min-width: 8.502rem
+    color: $color-gray2
+    font-size: 1rem
+    margin: 1rem 0
+
+
+@media screen and ( min-width: 768px )
+    #nav--mobile
+        max-width: 75rem
+        margin: 0 auto
+    .banner__container
+        max-width: 75rem
+        margin: 0 auto
+    .banner__header
+        font-size: 4rem
+        margin-bottom: 3rem
+    .banner__description
+        font-size: 2.4rem
+    .btn__container
+        margin: 3.5rem 0 4rem
+        flex-direction: row
+        justify-content: flex-start
+        height: auto
+    .btn
+        height: 5.2rem
+        width: 15.2rem
+        padding: 1.6rem 2.9rem
+        margin-right: 0.8rem
+    .benefits
+        max-width: 75rem
+        margin: 0 auto
+        padding: 7.5rem 1.5rem
+    .benefits__header
+        font-size: 4rem
+        margin-bottom: 5.2rem
+    .benefits__container
+        flex-direction: row
+        flex-wrap: wrap
+    .benefits__card
+        width: 36rem
+    .plans
+        padding: 7.5rem 1.5rem
+    .card
+        .btn
+            width: 100%
+    .footer__content
+        max-width: 75rem
+        margin: 0 auto
+    .footer__nav
+        display: flex
+        justify-content: space-between
+    .footer__link-container
+        padding-right: 3rem
+    .footer__link
+        height: fit-content
+    .footer__legal a,
+    .footer__copyright,
+    .footer__country a
+        font-size: 1.2rem
+
+@media screen and ( min-width: 992px )
+    #nav--mobile
+        display: none!important
+    #nav--desktop
+        display: block
+        min-height: 8rem
+        background: $color-black
+        width: 97rem
+        padding: 0 1.5rem
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+    .navbar-brand
+        svg
+            fill: $color-white
+            width: 13.2rem
+            height: 4.19rem
+    .nav__link-space
+        display: flex
+        justify-content: space-between
+    .nav__link-container--desktop
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .nav__mainlinks--desktop 
+        padding: 2.8rem 1.7rem
+        text-decoration: none
+        color: $color-white
+        font-size: 1.6rem
+    .nav__separator--desktop
+        padding: 3.2rem 1.7rem
+        text-decoration: none
+        color: $color-white
+        font-size: 1.6rem
+    .nav__links--desktop
+        padding: 2.8rem 1.7rem
+        text-decoration: none
+        color: $color-white
+        font-size: 1.6rem
+    .banner__container
+        max-width: 97rem
+    .benefits
+        max-width: 97rem
+    .benefits__card
+        width: 47rem
+    .footer__content
+        max-width: 97rem
+        padding: 8rem 1.5rem 5rem
+    .footer__mainlinks
+        display: flex
+    .footer__logo 
+        margin-right: 1.5rem 
+        svg
+            min-width: 13.2rem
+    .footer__link-container
+        max-width: 16.67rem
+        height: 34.6rem
+    .footer__link-container:last-child
+        padding-right: 1.5rem
+    .footer__link-category
+        margin: 2rem 0
+    .footer__social
+        margin-top: 2rem
+        margin-left: auto
+        width: fit-content
+    .footer__icon
+        height: 5.4rem
+        min-width: 5.4rem
+
+@media screen and ( min-width: 1200px )
+    #nav--desktop
+        width: 117rem
+    .banner__container
+        max-width: 117rem
+    .cards__container
+        display: flex
+        margin-bottom: 2.6rem
+    .card
+        width: 36.4rem
+        margin-right: 1.6rem
+    .card__list-benefits
+        height: 13.2rem
+    .footer__content
+        max-width: 117rem
+    .footer__logo
+        width: 16.167rem
+
+    .footer__link-container
+        max-width: 19.5rem
+    .benefits
+        max-width: 117rem
+    .benefits__container
+        flex-wrap: nowrap
+    .benefits__card
+        flex-direction: column
+        align-items: center
+        width: 28.5rem
+        height: 28.658rem
+        margin-bottom: 2rem
+    .benefits__icon
+        width: 14.2rem
+        height: 14.5rem
+        margin-right: 0
+    .benefits__content
+        padding: 4rem 0 1.6rem
+    .benefits__name
+        text-align: center
+        margin-bottom: 1rem
+    .benefits__description
+        text-align: center
